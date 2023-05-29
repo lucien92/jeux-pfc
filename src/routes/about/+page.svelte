@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import rock from '$lib/images/rock.svg';
-	import leaf from '$lib/images/leaf.svg';
+	import leaf from '$lib/images/feuille.svg';
 	import cissors from '$lib/images/cissors.svg';
 	import 'tailwindcss/tailwind.css';
   
