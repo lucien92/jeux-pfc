@@ -3,6 +3,7 @@
 	import rock from '$lib/images/rock.svg';
 	import leaf from '$lib/images/feuille.svg';
 	import cissors from '$lib/images/cissors.svg';
+	import essec from '$lib/images/Logo-essec.jpg';
 	import 'tailwindcss/tailwind.css';
   
 	let choices = ['Pierre', 'Feuille', 'Ciseaux'];
@@ -26,31 +27,56 @@
 		result = "Perdu !";
 	  }
 	};
-  </script>
-  
-  <style>
+</script>
+
+<style>
 	.container {
 	  display: flex;
 	  flex-direction: column;
-	  justify-content: center;
+	  justify-content: space-between;
+	  background-image: url('arbre-branchu-de-vert-de-dessin-de-vecteur-avec-des-oiseaux-29561652.jpg');
+	  background-size: cover;
 	  align-items: center;
 	  min-height: 100vh;
 	}
-  
+
+	.header {
+	  display: flex;
+	  justify-content: center;
+	  align-items: flex-start;
+	  width: 100%;
+	}
+
 	.title {
 	  font-size: 2rem;
 	  color: red;
 	  font-style: italic;
 	  margin-bottom: 1rem;
 	}
-  
-	.banner {
-	  background-color: yellow;
-	  padding: 1rem;
-	  margin-bottom: 1rem;
-	  border-radius: 0.25rem;
+
+	.middle-section {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
 	}
-  
+
+	.subtitle {
+		font-size: 1.8rem; /* Augmenter la taille de la police */
+		font-weight: bold;
+		margin-bottom: 1rem;
+		color: #000; /* Changer la couleur du texte en noir */
+	}
+
+
+	.button-container {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-wrap: wrap;
+	  margin-bottom: 22rem;
+	}
+
 	.button {
 	  padding: 0.5rem 1rem;
 	  margin: 0.5rem;
@@ -63,42 +89,47 @@
 	  display: flex;
 	  align-items: center;
 	}
-  
+
 	.button img {
 	  width: 1.5rem;
 	  height: 1.5rem;
 	  fill: currentColor;
 	  margin-right: 0.5rem;
 	}
-  
+
 	.result {
 	  font-weight: bold;
-	  margin-top: 1rem;
+	  margin-bottom: 10rem;
 	}
-  </style>
-  
-  <div class="container">
-	<h1 class="title">Pierre Feuille Ciseaux</h1>
-	<div class="banner">
-	  <p><em>Choisissez votre coup :</em></p>
+
+</style>
+<div class="container">
+	<div class="header">
+	<div class="title">Pierre Feuille Ciseaux</div>
 	</div>
-	<div>
-	  <button class="button" on:click={() => playGame('Pierre')}>
+	<div class="middle-section">
+	<div class="subtitle">Choisissez votre coup :</div>
+	</div>
+	<div class="button-container">
+	<button class="button" on:click={() => playGame('Pierre')}>
 		<img src={rock} alt="Rock" />
 		<strong>Pierre</strong>
-	  </button>
-	  <button class="button" on:click={() => playGame('Feuille')}>
+	</button>
+	<button class="button" on:click={() => playGame('Feuille')}>
 		<img src={leaf} alt="Leaf" />
 		<strong>Feuille</strong>
-	  </button>
-	  <button class="button" on:click={() => playGame('Ciseaux')}>
+	</button>
+	<button class="button" on:click={() => playGame('Ciseaux')}>
 		<img src={cissors} alt="Cissors" />
 		<strong>Ciseaux</strong>
-	  </button>
+	</button>
 	</div>
 	{#if playerChoice !== ''}
-	  <p>Vous avez choisi : {playerChoice}</p>
-	  <p>L'ordinateur a choisi : {computerChoice}</p>
-	  <p class="result">Résultat : {result}</p>
+	<div class="subtitle">
+		<p class="result">Résultat : {result}</p>
+		<p>Vous avez choisi : {playerChoice}</p>
+		<p>L'ordinateur a choisi : {computerChoice}</p>
+	</div>
 	{/if}
-</div>  
+</div>
+

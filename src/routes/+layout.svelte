@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Author: <a href="https://www.linkedin.com/in/lucien-rondier-6a282a1b7/">Lucien Rondier</a> 
 	</footer>
 </div>
 

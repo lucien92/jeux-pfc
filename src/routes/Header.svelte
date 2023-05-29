@@ -6,7 +6,7 @@
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="https://bonjour-coree.org/bokbulbok-%EB%B3%B5%EB%B6%88%EB%B3%B5-special-game-pierre-feuille-ciseaux-%EA%B0%80%EC%9C%84-%EB%B0%94%EC%9C%84-%EB%B3%B4/">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
@@ -29,7 +29,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/lucien92/jeux-pfc">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
