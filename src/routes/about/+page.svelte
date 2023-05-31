@@ -3,7 +3,6 @@
 	import rock from '$lib/images/rock.svg';
 	import leaf from '$lib/images/feuille.svg';
 	import cissors from '$lib/images/cissors.svg';
-	import essec from '$lib/images/Logo-essec.jpg';
 	import 'tailwindcss/tailwind.css';
   
 	let choices = ['Pierre', 'Feuille', 'Ciseaux'];
